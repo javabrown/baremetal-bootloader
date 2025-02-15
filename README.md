@@ -16,15 +16,20 @@ This project provides a **fully isolated Docker environment** for assembling and
 ## 📂 **Project Structure**
 ```
 baremetal-bootloader/
-├── src/                  # Source code (Assembly files)
-│   ├── bootloader.asm    # The bootloader in x86 Assembly
-├── bin/                  # Compiled bootloader output (saved here)
-├── scripts/              # Utility scripts
-│   ├── build.sh          # Compiles the bootloader
-│   ├── run.sh            # Runs the bootloader in QEMU
-│   ├── entrypoint.sh     # Fixes permissions in Docker
+├── src/                  # Source files
+│   ├── bootloader.asm    # Core bootloader (loads kernel and modules)
+│   ├── core.asm          # Core functionalities (prompt, input, output)
+│   ├── commands/         # Separate folder for commands
+│   │   ├── echo.asm      # "echo" command
+│   │   ├── clear.asm     # "clear" command
+│   │   ├── help.asm      # "help" command
+├── bin/                  # Compiled output
+│   ├── bootloader.bin
+├── scripts/              # Build & run scripts
+│   ├── build.sh
+│   ├── run.sh
+│   ├── entrypoint.sh
 ├── Dockerfile            # Minimal Docker setup
-├── run_docker.sh         # Automates Docker build & execution
 └── README.md             # Project documentation
 ```
 

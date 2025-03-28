@@ -1,4 +1,4 @@
-# 🚀 Bare-Metal Bootloader in Docker  
+# Bare-Metal Bootloader in Docker  
 A **lightweight, minimal bare-metal bootloader** written in **x86 Assembly**, running on **real hardware or in QEMU inside Docker**.
 
 This project provides a **fully isolated Docker environment** for assembling and running a **bootloader without requiring an OS**.
@@ -6,10 +6,10 @@ This project provides a **fully isolated Docker environment** for assembling and
 ---
 
 ##  **Features:**
-✅ **No OS Required** – Runs directly on hardware.  
-✅ **Minimal Setup** – No dependencies needed on the host machine.  
-✅ **Fully Dockerized** – NASM (for assembly) and QEMU (for execution) included in the container.  
-✅ **USB Bootable** – Can be flashed to a USB drive and booted on real hardware.  
+**No OS Required** – Runs directly on hardware.  
+**Minimal Setup** – No dependencies needed on the host machine.  
+**Fully Dockerized** – NASM (for assembly) and QEMU (for execution) included in the container.  
+**USB Bootable** – Can be flashed to a USB drive and booted on real hardware.  
 
 ---
 
@@ -114,9 +114,9 @@ sudo dd if=bin/bootloader.bin of=/dev/sdX bs=512 count=1
 
 ## ** Next Steps**
 Would you like to:
-- ✅ **Handle keyboard input in the bootloader?**
-- ✅ **Load a kernel after boot?**
-- ✅ **Port this to ARM for mobile devices?**
+- **Handle keyboard input in the bootloader?**
+- **Load a kernel after boot?**
+- **Port this to ARM for mobile devices?**
 
 ---
 

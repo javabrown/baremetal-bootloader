@@ -136,8 +136,7 @@ chmod +x scripts/*.sh
 ##  **Contribute & Support**
  Feel free to **fork this repo**, submit **PRs**, or ask **questions** in the Issues section!  
 
- **Follow for more projects:**  
- [Javabrown]([https://github.com/javabrown])
+ **Follow for more projects:**  https://github.com/javabrown
 
 ---
 

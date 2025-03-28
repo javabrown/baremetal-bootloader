@@ -5,7 +5,7 @@ This project provides a **fully isolated Docker environment** for assembling and
 
 ---
 
-## 📌 **Features**
+##  **Features:**
 ✅ **No OS Required** – Runs directly on hardware.  
 ✅ **Minimal Setup** – No dependencies needed on the host machine.  
 ✅ **Fully Dockerized** – NASM (for assembly) and QEMU (for execution) included in the container.  
@@ -35,7 +35,7 @@ baremetal-bootloader/
 
 ---
 
-## 🛠 **Setup Instructions**
+##  **Setup Instructions**
 ### **1️⃣ Install Docker**
 Make sure you have **Docker** installed. If not, install it from:  
 🔗 [Docker Install Guide](https://docs.docker.com/get-docker/)  
@@ -61,23 +61,23 @@ chmod +x run_docker.sh scripts/*.sh
 ```bash
 ./run_docker.sh
 ```
-✅ **What this does:**  
+ **What this does:**  
 - Deletes any existing Docker image.  
 - Builds a fresh Docker image.  
 - Runs the container **with NASM and QEMU pre-installed**.  
 
 ---
 
-## 🚀 **Building & Running the Bootloader**
+##  **Building & Running the Bootloader**
 ### **5️⃣ Compile the Bootloader**
 Inside Docker, run:
 ```bash
 /app/scripts/build.sh
 ```
-✅ **Output:**  
+ **Output:**  
 ```
-🚀 Compiling Bootloader...
-✅ Bootloader compiled successfully! File saved in bin/bootloader.bin
+Compiling Bootloader...
+ Bootloader compiled successfully! File saved in bin/bootloader.bin
 ```
 
 ---
@@ -87,14 +87,14 @@ Inside Docker, run:
 ```bash
 /app/scripts/run.sh
 ```
-✅ **Expected Output in QEMU:**
+ **Expected Output in QEMU:**
 ```
 Hello, World from Bare-Metal Bootloader!
 ```
 
 ---
 
-## 🔥 **Booting on Real Hardware**
+##  **Booting on Real Hardware**
 ### **7️⃣ Flash to a USB Drive**
 If you want to boot this on real hardware:  
 ```bash
@@ -112,7 +112,7 @@ sudo dd if=bin/bootloader.bin of=/dev/sdX bs=512 count=1
 
 ---
 
-## **📌 Next Steps**
+## ** Next Steps**
 Would you like to:
 - ✅ **Handle keyboard input in the bootloader?**
 - ✅ **Load a kernel after boot?**
@@ -120,28 +120,28 @@ Would you like to:
 
 ---
 
-## 🛠 **Troubleshooting**
-❌ **Getting "stat /app/build.sh: no such file or directory" error?**  
-✔️ **Make sure the scripts are mounted inside Docker:**  
+##  **Troubleshooting**
+ **Getting "stat /app/build.sh: no such file or directory" error?**  
+ **Make sure the scripts are mounted inside Docker:**  
 ```bash
 -v $(pwd)/scripts:/app/scripts
 ```
-✔️ **Ensure the scripts have execution permissions:**  
+ **Ensure the scripts have execution permissions:**  
 ```bash
 chmod +x scripts/*.sh
 ```
 
 ---
 
-## ⭐ **Contribute & Support**
-🙌 Feel free to **fork this repo**, submit **PRs**, or ask **questions** in the Issues section!  
+##  **Contribute & Support**
+ Feel free to **fork this repo**, submit **PRs**, or ask **questions** in the Issues section!  
 
-📢 **Follow for more projects:**  
-🔗 [GitHub Profile](https://github.com/YOUR_GITHUB_USERNAME)  
+ **Follow for more projects:**  
+ [Javabrown]([https://github.com/javabrown])
 
 ---
 
-## **🚀 License**
+## ** License**
 This project is **open-source** under the **MIT License**.  
 
 
